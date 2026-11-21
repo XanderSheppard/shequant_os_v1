@@ -1,14 +1,14 @@
 # shequant_os_v1: Multimodal Latent Space Fusion for GPS-Denied Aerospace Control
 
 **Status:** Stable / Research-Grade  
-**Author:** Xander Sheppard, Principal AI Researcher  
+**Author:** Xander Sheppard, Principal Machine Learning Researcher  
 **Organization:** Shequant  
 
 ---
 
 ## Abstract
 
-Modern autonomous flight relies heavily on external coordinate systems (GPS) and disjointed processing pipelines. In GPS-denied environments—such as electronic warfare zones, subterranean structures, or deep-space orbital operations—standard off-the-shelf wrappers collapse because they abstract underlying aerodynamic physics away from the control policy.
+Modern autonomous flight relies heavily on external coordinate systems (GPS) and disjointed processing pipelines. In GPS-denied environments such as electronic warfare zones, subterranean structures, or deep-space orbital operations—standard off-the-shelf wrappers collapse because they abstract underlying aerodynamic physics away from the control policy.
 
 `shequant_os_v1` is a bare-metal, mathematically rigorous autonomy stack designed to solve GPS-denied stabilization and trajectory control. It couples a custom C++20 aerodynamics kernel directly to a PyTorch Vision Transformer (ViT) and Proximal Policy Optimization (PPO) Actor-Critic network. Rather than relying on external position coordinates, the agent learns to stabilize and maneuver the craft by fusing raw `64x64` visual pixel arrays and internal kinematic IMU states directly inside a shared latent space.
 
