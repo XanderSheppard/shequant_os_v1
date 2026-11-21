@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Modern autonomous flight relies heavily on external coordinate systems (GPS) and disjointed processing pipelines. In GPS-denied environments—such as electronic warfare zones, deep-space orbits, or subterranean flight—standard wrappers and off-the-shelf APIs collapse because they abstract underlying physical dynamics away from the neural policy.
+Modern autonomous flight relies heavily on external coordinate systems (GPS) and disjointed processing pipelines. In GPS-denied environments such as electronic warfare zones, deep-space orbits, or subterranean flight—standard wrappers and off-the-shelf APIs collapse because they abstract underlying physical dynamics away from the neural policy.
 
 `shequant_os_v1` is a bare-metal, mathematically rigorous control architecture built to solve this problem. It fuses a custom C++20 aerodynamics kernel natively to a PyTorch Vision-Transformer  and Proximal Policy Optimization Actor-Critic network. Instead of depending on external coordinates, the agent learns to stabilize and control the craft by fusing raw visual pixel arrays and internal kinematic states (IMU) directly inside the network's latent space.
 
